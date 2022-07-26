@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="내정보"
+        android:id="@+id/share"
+        android:icon="@drawable/ic_launcher_background"
+        />
+    <item
+        android:title="설정"
+        android:id="@+id/Dduck"
+        android:icon="@drawable/ic_launcher_background"
+        />
+</menu>

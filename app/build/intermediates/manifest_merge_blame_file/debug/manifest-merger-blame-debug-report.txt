@@ -1,0 +1,110 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ict"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:6:5-44:19
+12        android:allowBackup="true"
+12-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\wlstm\.gradle\caches\transforms-3\d409417959c78fbf29d76ceae9660126\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:8:9-65
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:fullBackupContent="@xml/backup_rules"
+17-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:9:9-54
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:13:9-35
+22        android:theme="@style/Theme.ICT" >
+22-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:14:9-41
+23        <activity
+23-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:16:9-24:20
+24            android:name="com.example.ict.MainActivity"
+24-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:17:13-41
+25            android:exported="true" >
+25-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:18:13-36
+26            <intent-filter>
+26-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:19:13-23:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:20:17-69
+27-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:20:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:22:17-77
+29-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:22:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity
+32-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:25:9-33:20
+33            android:name="com.example.ict.SubActivity"
+33-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:26:13-40
+34            android:exported="true" >
+34-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:27:13-36
+35            <intent-filter>
+35-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:19:13-23:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:20:17-69
+36-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:20:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:22:17-77
+38-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:22:27-74
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:34:9-42:20
+42            android:name="com.example.ict.CallActivity"
+42-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:35:13-41
+43            android:exported="true" >
+43-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:36:13-36
+44            <intent-filter>
+44-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:19:13-23:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:20:17-69
+45-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:20:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:22:17-77
+47-->C:\Users\wlstm\AndroidStudioProjects\ICT\app\src\main\AndroidManifest.xml:22:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\wlstm\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\wlstm\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+53            android:authorities="com.example.ict.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\wlstm\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\wlstm\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\wlstm\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\wlstm\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\wlstm\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\wlstm\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\wlstm\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\wlstm\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+61        </provider>
+62    </application>
+63
+64</manifest>
