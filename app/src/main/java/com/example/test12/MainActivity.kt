@@ -30,6 +30,14 @@ class MainActivity : AppCompatActivity() {
             val intent3 = Intent(this,AlarmService::class.java)
             startActivity(intent3)
         }
+        search_button.setOnClickListener {
+            val intent4 = Intent(this,LinkPage::class.java)
+            startActivity(intent4)
+        }
+        setting_button.setOnClickListener {
+            val intent5 = Intent(this,SettingPage::class.java)
+            startActivity(intent5)
+        }
 
     }
 

@@ -20,6 +20,26 @@
         app:layout_constraintVertical_bias="0.0"
         />
 
+    <ImageView
+        android:id="@+id/search_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/setting_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092"
+        app:srcCompat="@drawable/setting" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="196dp"
@@ -49,7 +69,6 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="155dp"
-        android:layout_marginTop="95dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="92dp"
         android:scaleType="fitXY"
@@ -57,5 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:srcCompat="@drawable/siren" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/siren"
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
