@@ -41,16 +41,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu,menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.profile -> println("내 정보")
-            R.id.setting -> println("설정")
-        }
-        return super.onOptionsItemSelected(item)
-    }
 }
