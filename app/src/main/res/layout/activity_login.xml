@@ -80,12 +80,12 @@
             <Button
                 android:id="@+id/btn_login"
                 android:layout_width="280dp"
-                android:layout_height="38dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@android:color/holo_orange_dark"
                 android:text="로그인"
-                android:textColor="#ffffff"
+                android:textColor="#455A64"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 

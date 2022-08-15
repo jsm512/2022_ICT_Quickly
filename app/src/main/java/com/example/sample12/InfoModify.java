@@ -20,8 +20,6 @@ import org.json.JSONObject;
 
 public class InfoModify extends AppCompatActivity {
 
-    String result="";
-    CheckBox disease1,disease2,disease3,disease4;
     EditText et_pass, et_pass2;
     Button btn_save;
     String ID="";
@@ -43,31 +41,6 @@ public class InfoModify extends AppCompatActivity {
         ID = userID;
 
 
-
-        findViewById(R.id.disease1).setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Checked1(v);
-            }
-        });
-
-        findViewById(R.id.disease2).setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Checked2(v);
-            }
-        });
-
-        findViewById(R.id.disease3).setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Checked3(v);
-            }
-        });
-
-        findViewById(R.id.disease4).setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Checked4(v);
-            }
-        });
-
         btn_save = findViewById(R.id.btn_save);
 
         btn_save.setOnClickListener(new View.OnClickListener(){
@@ -76,7 +49,6 @@ public class InfoModify extends AppCompatActivity {
                 //EditText에 현재 입력되있는 값을 가져온다.
                 String userID = ID;
                 String userPass=et_pass2.getText().toString();
-                String userDisease = result;
 
                 Response.Listener<String>responseListener = new Response.Listener<String>() {
                     @Override
@@ -100,7 +72,7 @@ public class InfoModify extends AppCompatActivity {
                     }
                 };
                 //서버로 volley를 이용해서 요청
-                ModifyRequest modifyRequest = new ModifyRequest(userID, userPass,userDisease,responseListener);
+                ModifyRequest modifyRequest = new ModifyRequest(userID, userPass,responseListener);
                 RequestQueue queue = Volley.newRequestQueue(InfoModify.this);
                 queue.add(modifyRequest);
             }
@@ -108,67 +80,5 @@ public class InfoModify extends AppCompatActivity {
 
 
 
-    }
-
-
-    public String Checked1(View v){
-        disease1 = findViewById(R.id.disease1);
-
-        //String result = "";
-        if(disease1.isChecked()){
-            result = result + "고혈압 ";
-        }else{
-            result = result.replaceAll("고혈압 ","");
-        }
-
-        return result;
-    }
-
-    public String Checked2(View v){
-
-        disease2 = findViewById(R.id.disease2);
-
-        //String result = "";
-
-
-        if(disease2.isChecked()){
-            result = result + "당뇨 ";
-        }else{
-            result = result.replaceAll("당뇨 ","");
-        }
-
-        return result;
-    }
-
-    public String Checked3(View v){
-
-        disease3 = findViewById(R.id.disease3);
-
-        //String result = "";
-
-
-        if(disease3.isChecked()){
-            result = result + "심부전증 ";
-        }else{
-            result = result.replaceAll("심부전증 ","");
-        }
-
-        return result;
-    }
-
-    public String Checked4(View v){
-
-        disease4 = findViewById(R.id.disease4);
-
-        //String result = "";
-
-
-        if(disease4.isChecked()){
-            result = result + "부정맥 ";
-        }else{
-            result = result.replaceAll("부정맥 ","");
-        }
-
-        return result;
     }
 }

@@ -13,13 +13,12 @@ public class ModifyRequest extends StringRequest {
     final static private String URL = "http://r2445.dothome.co.kr/Modify.php";
     private Map<String, String> map;
 
-    public ModifyRequest(String userID, String userPassword, String userDisease, Response.Listener<String> Listener) {
+    public ModifyRequest(String userID, String userPassword, Response.Listener<String> Listener) {
         super(Method.POST,URL,Listener,null);
 
         map = new HashMap<>();
         map.put("userID",userID);
         map.put("userPassword",userPassword);
-        map.put("userDisease", userDisease);
 
     }
 

@@ -44,9 +44,10 @@
                 android:layout_marginTop="50dp"
                 android:background="@android:color/holo_orange_light"
                 android:hint="아이디"
+                android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
+                android:textColorHint="#3949AB" />
 
             <EditText
                 android:id="@+id/et_pass"
@@ -57,9 +58,10 @@
                 android:background="@android:color/holo_orange_light"
                 android:hint="비밀번호"
                 android:inputType="textPassword"
+                android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
+                android:textColorHint="#3949AB" />
 
             <EditText
                 android:id="@+id/et_name"
@@ -69,10 +71,11 @@
                 android:layout_marginTop="10dp"
                 android:background="@android:color/holo_orange_light"
                 android:hint="이름"
+                android:minHeight="48dp"
                 android:padding="10dp"
                 android:privateImeOptions="defaultInputmode=korean"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
+                android:textColorHint="#3949AB" />
 
             <EditText
                 android:id="@+id/et_age"
@@ -82,78 +85,10 @@
                 android:layout_marginTop="10dp"
                 android:background="@android:color/holo_orange_light"
                 android:hint="생년월일"
+                android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
-
-            <RadioGroup
-                android:id="@+id/genderGroup"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/genderWoman"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    android:text="여성" />
-
-                <RadioButton
-                    android:id="@+id/genderMan"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="남성" />
-
-            </RadioGroup>
-
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="질 병"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:id="@+id/disease1"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="10dp"
-                android:text="고혈압" />
-
-            <CheckBox
-                android:id="@+id/disease2"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="10dp"
-                android:text="당뇨" />
-
-            <CheckBox
-                android:id="@+id/disease3"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="10dp"
-                android:text="심부전증" />
-
-            <CheckBox
-                android:id="@+id/disease4"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="10dp"
-                android:text="부정맥" />
+                android:textColorHint="#3949AB" />
 
 
         </LinearLayout>
@@ -166,7 +101,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_orange_dark"
             android:text="가입하기"
-            android:textColor="#ffffff"
+            android:textColor="#455A64"
             android:textSize="20dp"
             android:textStyle="bold" />
 

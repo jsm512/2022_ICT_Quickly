@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<!--인터넷 권한 선언-->
     <uses-permission android:name="android.permission.INTERNET" />
 
 
@@ -18,8 +19,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-
+        android:usesCleartextTraffic="true"
         >
+
 
         <activity android:name=".InfoModify"></activity>
 
@@ -42,7 +44,7 @@
         <activity android:name=".RegisterActivity" />
 
         <activity android:name=".Login" android:exported="true">
-
+<!--첫 빌드시 실행할 Activity 설정-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
