@@ -1,6 +1,7 @@
 package com.example.sample12;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.bluetooth.BluetoothAdapter;
@@ -138,6 +139,7 @@ public class MainActivity extends AppCompatActivity
 
         btn_pairing = findViewById(R.id.btn_pairing);
         btn_pairing.setOnClickListener(new View.OnClickListener(){
+            @SuppressLint("MissingPermission")
             @Override
             public void onClick(View v) {
                 if (mBluetoothAdapter == null) {
@@ -307,6 +309,7 @@ public class MainActivity extends AppCompatActivity
         private BluetoothSocket mBluetoothSocket = null;
         private BluetoothDevice mBluetoothDevice = null;
 
+        @SuppressLint("MissingPermission")
         ConnectTask(BluetoothDevice bluetoothDevice) {
             mBluetoothDevice = bluetoothDevice;
             mConnectedDeviceName = bluetoothDevice.getName();
@@ -326,6 +329,7 @@ public class MainActivity extends AppCompatActivity
         }
 
 
+        @SuppressLint("MissingPermission")
         @Override
         protected Boolean doInBackground(Void... params) {
 
@@ -503,9 +507,10 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    @SuppressLint("MissingPermission")
     public void showPairedDevicesListDialog()
     {
-        Set<BluetoothDevice> devices = mBluetoothAdapter.getBondedDevices();
+        @SuppressLint("MissingPermission") Set<BluetoothDevice> devices = mBluetoothAdapter.getBondedDevices();
         final BluetoothDevice[] pairedDevices = devices.toArray(new BluetoothDevice[0]);
 
         if ( pairedDevices.length == 0 ){
