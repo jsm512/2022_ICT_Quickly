@@ -37,7 +37,7 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity
 {
-
+    //
     public String name="";
 
     public String id="";
