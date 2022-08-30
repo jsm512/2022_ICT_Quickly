@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#FAFAD2">
+    android:background="#649CFF">
 
 
 
@@ -20,7 +20,7 @@
         android:id="@+id/timer"
         android:layout_width="213dp"
         android:layout_height="61dp"
-        android:text="60초"
+        android:text="9분 58초"
         android:textSize="40dp"
         android:gravity="center"
         />
@@ -31,6 +31,6 @@
         android:layout_height="91dp"
         android:text="알람 종료"
         android:textSize="30dp"
-        android:background="#FFD700"/>
+        android:background="#46FFFF"/>
 
 </LinearLayout>

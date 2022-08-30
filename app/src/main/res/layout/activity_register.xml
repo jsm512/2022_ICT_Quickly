@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
+            android:background="@color/blue"
             android:orientation="vertical">
 
             <TextView
@@ -34,6 +34,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="500dp"
+
             android:orientation="vertical">
 
             <EditText
@@ -42,12 +43,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:background="@android:color/holo_orange_light"
+                android:background="@android:color/holo_blue_light"
                 android:hint="아이디"
                 android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#3949AB" />
+                android:textColorHint="#ffffff" />
 
             <EditText
                 android:id="@+id/et_pass"
@@ -55,13 +56,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/holo_orange_light"
+                android:background="@android:color/holo_blue_light"
                 android:hint="비밀번호"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#3949AB" />
+                android:textColorHint="#ffffff" />
 
             <EditText
                 android:id="@+id/et_name"
@@ -69,13 +70,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/holo_orange_light"
+                android:background="@android:color/holo_blue_light"
                 android:hint="이름"
                 android:minHeight="48dp"
                 android:padding="10dp"
                 android:privateImeOptions="defaultInputmode=korean"
                 android:textColor="#ffffff"
-                android:textColorHint="#3949AB" />
+                android:textColorHint="#ffffff" />
 
             <EditText
                 android:id="@+id/et_age"
@@ -83,12 +84,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/holo_orange_light"
+                android:background="@android:color/holo_blue_light"
                 android:hint="생년월일"
                 android:minHeight="48dp"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#3949AB" />
+                android:textColorHint="#ffffff" />
 
 
         </LinearLayout>
@@ -99,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@android:color/holo_orange_dark"
+            android:background="@color/blue"
             android:text="가입하기"
             android:textColor="#455A64"
             android:textSize="20dp"

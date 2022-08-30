@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CDECFA"
     tools:context=".Login"
     android:orientation="horizontal">
 
@@ -23,7 +24,7 @@
                 android:layout_height="125dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/startpage"
+                android:src="@drawable/safe"
                 />
 
             <TextView
@@ -31,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="Life Alert : 얼라들"
+                android:text="안심이"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -58,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:background="@android:color/holo_orange_light"
+                android:background="@color/blue"
                 android:hint="아이디"
                 android:padding="10dp"
                 android:textColor="#ffffff"
@@ -70,12 +71,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/holo_orange_light"
+                android:background="@color/blue"
                 android:hint="비밀번호"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff" />
+
 
             <Button
                 android:id="@+id/btn_login"
@@ -83,12 +85,11 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/holo_orange_dark"
+                android:background="@color/blue"
                 android:text="로그인"
                 android:textColor="#455A64"
                 android:textSize="20dp"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:id="@+id/btn_register"
