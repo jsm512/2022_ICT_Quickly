@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity
     static boolean isConnectionError = false;
     private static final String TAG = "BluetoothClient";
 
-    ImageButton btn_call119, btn_cancel, btn_modify, btn_hospital;
+    ImageButton btn_call119, btn_call_info, btn_drive_info, btn_hospital;
     TextView textName;
 
 
@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity
 
 
         btn_call119 = (ImageButton) findViewById(R.id.btn_call119);
-        btn_modify = (ImageButton) findViewById(R.id.btn_modify);
-        btn_cancel = (ImageButton) findViewById(R.id.btn_cancel);
-
+        btn_drive_info = (ImageButton) findViewById(R.id.btn_drive_info);
+        btn_call_info = (ImageButton) findViewById(R.id.btn_call_info);
+        btn_hospital = (ImageButton) findViewById(R.id.btn_hospital);
 
         textName = findViewById(R.id.textName);
 
@@ -236,7 +236,7 @@ public class MainActivity extends AppCompatActivity
     {
 
 
-        btn_modify.setOnClickListener(new View.OnClickListener(){
+        btn_drive_info.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
             {
@@ -246,7 +246,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        btn_cancel.setOnClickListener(new View.OnClickListener(){
+        btn_call_info.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
             {

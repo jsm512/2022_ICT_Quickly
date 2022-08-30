@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/btn_modify"
+        android:id="@+id/btn_drive_info"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginTop="32dp"
@@ -26,7 +26,7 @@
         app:srcCompat="@drawable/call" />
 
     <ImageButton
-        android:id="@+id/btn_cancel"
+        android:id="@+id/btn_call119"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginTop="28dp"
@@ -38,14 +38,14 @@
         android:src="@drawable/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_modify"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drive_info"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/siren" />
 
     <ImageButton
-        android:id="@+id/btn_call119"
+        android:id="@+id/btn_call_info"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginStart="11dp"
@@ -63,6 +63,26 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/call" />
+
+    <ImageButton
+        android:id="@+id/btn_hospital"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="80dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hospital"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_call_info"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
