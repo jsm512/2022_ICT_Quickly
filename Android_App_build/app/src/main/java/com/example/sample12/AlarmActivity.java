@@ -24,7 +24,7 @@ import java.util.TimerTask;
 public class AlarmActivity extends AppCompatActivity {
 
 
-    private int counter = 60;
+    private int counter = 600;
     private TextView timer_text;
     private final Handler handler = new Handler();
 
@@ -67,7 +67,7 @@ public class AlarmActivity extends AppCompatActivity {
                 Update();
                 counter--;
                 if(counter == 0){
-                    counter = 60;
+                    counter = 600;
 
                     if(!isPermission){
                         callPermission();

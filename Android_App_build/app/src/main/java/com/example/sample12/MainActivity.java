@@ -103,6 +103,9 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                Intent k = new Intent(MainActivity.this, AlarmActivity.class);
+                k.putExtra("userID",id);
+                startActivity(k);
 
                 if(!isPermission){
                     callPermission();
@@ -116,7 +119,7 @@ public class MainActivity extends AppCompatActivity
                 double longitude = gps2.getLongitude();
 
                 nowlocation = getCurrentAddress(latitude,longitude);
-                SendSMS("01065327985", userName+"님" +"\n"+ nowlocation + "낙상사고 발생");
+                SendSMS("01049365174", userName+"님" +"\n"+ nowlocation + "낙상사고 발생");
                 Toast.makeText(getApplicationContext(),"낙상발생! 119에 신고합니다.",Toast.LENGTH_LONG).show();
 
             }
@@ -250,8 +253,9 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                SendSMS("01065327985", "신고취소");
-                Toast.makeText(getApplicationContext(),"취소 했습니다.",Toast.LENGTH_LONG).show();
+                Intent j = new Intent(MainActivity.this, InfoModify.class);
+                j.putExtra("userID",id);
+                startActivity(j);
             }
         });
 
