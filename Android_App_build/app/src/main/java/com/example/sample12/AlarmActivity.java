@@ -24,7 +24,7 @@ import java.util.TimerTask;
 public class AlarmActivity extends AppCompatActivity {
 
 
-    private int counter = 600;
+    private int counter = 10;
     private TextView timer_text;
     private final Handler handler = new Handler();
 
@@ -67,7 +67,7 @@ public class AlarmActivity extends AppCompatActivity {
                 Update();
                 counter--;
                 if(counter == 0){
-                    counter = 600;
+                    counter = 10;
 
                     if(!isPermission){
                         callPermission();
@@ -101,7 +101,7 @@ public class AlarmActivity extends AppCompatActivity {
     //문자보내기함수
     public void SendSMS(String number, String msg){
         SmsManager sms = SmsManager.getDefault();
-        sms.sendTextMessage(number,null, msg,null,null);
+        sms.sendTextMessage(null,null, msg,null,null);
     }
     //알람업데이트 시간
     protected void Update() {
