@@ -10,7 +10,11 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 <!--인터넷 권한 선언-->
     <uses-permission android:name="android.permission.INTERNET" />
+<<<<<<< HEAD
+    <uses-permission android:name="android.permission.SEND_SMS" />
+=======
     <uses-permission android:name="android.permission.SEND_SMS"/>
+>>>>>>> 442a1a513a2453106cc474030e4975001b54b264
 
 
     <application
