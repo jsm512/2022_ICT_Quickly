@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity
                 gps2 = new GpsTracker(MainActivity.this);
 
 
-                double latitude = gps2.getLatitude();
-                double longitude = gps2.getLongitude();
+                double latitude = gps2.getLatitude();  //위도
+                double longitude = gps2.getLongitude(); //경도
 
                 nowlocation = getCurrentAddress(latitude,longitude);
                 SendSMS("01049365174", userName+"님" +"\n"+ nowlocation + "낙상사고 발생");
@@ -137,18 +137,19 @@ public class MainActivity extends AppCompatActivity
 
         Log.d( TAG, "Initalizing Bluetooth adapter...");
 
+        //블루투스 관련된 모든 작업은 이 함수를 이용하 BluetoothAdapter 클래를 얻는 작업부터 시작
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
         btn_pairing = findViewById(R.id.btn_pairing);
         btn_pairing.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if (mBluetoothAdapter == null) {
+                if (mBluetoothAdapter == null) {  //null을 반환하면 스마트폰에서 블루투스 지원을 하지 않는 것
                     showErrorDialog("This device is not implement Bluetooth.");
                     return;
                 }
-
-                if (!mBluetoothAdapter.isEnabled()) {
+                // 블루투스가 활성상태인지 파악
+                if (!mBluetoothAdapter.isEnabled()) { // 활성상태 아니라면 이 코드로 활성상태로 변경 가능
                     Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                     startActivityForResult(intent, REQUEST_BLUETOOTH_ENABLE);
                 }
@@ -293,7 +294,7 @@ public class MainActivity extends AppCompatActivity
         super.onActivityResult(requestCode, resultCode, data);
 
         switch (requestCode) {
-
+            // 블루투스 활성화
             case REQUEST_BLUETOOTH_ENABLE:
                 if (resultCode == RESULT_OK) {
                     //BlueTooth is now Enabled

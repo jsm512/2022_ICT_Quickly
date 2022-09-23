@@ -108,7 +108,7 @@ public class GpsTracker extends Service implements LocationListener {
         return location;
     }
 
-    public double getLatitude()
+    public double getLatitude() //위도값 가져오기
     {
         if(location != null)
         {
@@ -118,7 +118,7 @@ public class GpsTracker extends Service implements LocationListener {
         return latitude;
     }
 
-    public double getLongitude()
+    public double getLongitude() //경도값 가져오기
     {
         if(location != null)
         {
@@ -155,7 +155,7 @@ public class GpsTracker extends Service implements LocationListener {
     }
 
 
-    public void stopUsingGPS()
+    public void stopUsingGPS() // Gps 종료
     {
         if(locationManager != null)
         {
