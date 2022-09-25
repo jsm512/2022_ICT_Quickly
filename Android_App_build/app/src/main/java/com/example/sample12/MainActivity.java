@@ -319,6 +319,7 @@ public class MainActivity extends AppCompatActivity
             //SPP
             UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");
 
+
             try {
                 mBluetoothSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(uuid);
                 Log.d( TAG, "create socket for "+mConnectedDeviceName);
@@ -390,7 +391,7 @@ public class MainActivity extends AppCompatActivity
         ConnectedTask(BluetoothSocket socket){
 
             mBluetoothSocket = socket;
-            try {
+            try {  // 데이터 송, 수신 스트림을 얻어옴
                 mInputStream = mBluetoothSocket.getInputStream();
                 mOutputStream = mBluetoothSocket.getOutputStream();
             } catch (IOException e) {
