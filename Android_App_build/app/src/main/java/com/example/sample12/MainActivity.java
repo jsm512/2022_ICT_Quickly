@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity
                 double longitude = gps2.getLongitude(); //경도
 
                 nowlocation = getCurrentAddress(latitude,longitude);
-                SendSMS("01049365174", userName+"님" +"\n"+ nowlocation + "낙상사고 발생");
+                SendSMS("01088067574", userName+"님" +"\n"+ nowlocation + "낙상사고 발생");
                 Toast.makeText(getApplicationContext(),"낙상발생! 119에 신고합니다.",Toast.LENGTH_LONG).show();
 
             }
