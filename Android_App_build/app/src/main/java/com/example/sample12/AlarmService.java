@@ -1,7 +1,7 @@
 package com.example.sample12;
 
 
-import android.app.Notification;
+import android.app.Notification;  //알람 콘텐츠 설정
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.Service;
