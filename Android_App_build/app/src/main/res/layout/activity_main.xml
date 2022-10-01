@@ -7,23 +7,6 @@
     android:background="#CDECFA"
     tools:context=".MainActivity">
 
-    <ImageButton
-    android:id="@+id/btn_drive_info"
-    android:layout_width="180dp"
-    android:layout_height="180dp"
-    android:layout_marginTop="32dp"
-    android:layout_marginEnd="11dp"
-    android:adjustViewBounds="true"
-    android:background="@color/blue"
-    android:scaleType="fitCenter"
-    android:src="@drawable/drive"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.072"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-    app:layout_constraintVertical_bias="0.0"
-    app:srcCompat="@drawable/drive" />
 
     <ImageButton
         android:id="@+id/btn_call119"
@@ -40,29 +23,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_drive_info"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/siren" />
 
-    <ImageButton
-        android:id="@+id/btn_call_info"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="25dp"
-        android:adjustViewBounds="true"
-        android:background="@color/blue"
-        android:scaleType="fitCenter"
-        android:src="@drawable/call"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/call" />
 
     <ImageButton
         android:id="@+id/btn_hospital"
@@ -80,7 +43,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_call_info"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
@@ -164,8 +126,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="365dp"
+        android:layout_height="172dp"
         android:layout_marginTop="65dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
