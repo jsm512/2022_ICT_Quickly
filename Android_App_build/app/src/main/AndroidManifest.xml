@@ -27,8 +27,6 @@
         >
 
 
-        <activity android:name=".InfoModify"></activity>
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCyZ48Augf4ra8NQg06-Z8w0PEWQ-Yyk38" />
