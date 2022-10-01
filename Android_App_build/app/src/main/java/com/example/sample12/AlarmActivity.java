@@ -101,7 +101,7 @@ public class AlarmActivity extends AppCompatActivity {
     //문자보내기함수
     public void SendSMS(String number, String msg){
         SmsManager sms = SmsManager.getDefault();
-        sms.sendTextMessage(null,null, msg,null,null);
+        sms.sendTextMessage(number,null, msg,null,null);
     }
     //알람업데이트 시간
     protected void Update() {
