@@ -47,8 +47,8 @@ public class AlarmActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        timer_text= findViewById(R.id.timer);
         setContentView(R.layout.activity_alarm);
+        timer_text= findViewById(R.id.timer);
 
 
 
