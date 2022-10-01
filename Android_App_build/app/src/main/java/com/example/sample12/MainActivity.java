@@ -400,26 +400,26 @@ public class MainActivity extends AppCompatActivity
 
                         byte[] packetBytes = new byte[bytesAvailable];
                         mInputStream.read(packetBytes);
-//                        for(int i=0;i<bytesAvailable;i++) {
-//
-//                            byte b = packetBytes[i];
-//                            if(b == '\n')
-//                            {
-//                                byte[] encodedBytes = new byte[readBufferPosition];
-//                                System.arraycopy(readBuffer, 0, encodedBytes, 0,
-//                                        encodedBytes.length);
-//                                String recvMessage = new String(encodedBytes, "UTF-8");
-//
-//                                readBufferPosition = 0;
-//
-//                                Log.d(TAG, "recv message: " + recvMessage);
-//                                publishProgress(recvMessage);
-//                            }
-//                            else
-//                            {
-//                                readBuffer[readBufferPosition++] = b;
-//                            }
-//                        }
+                        for(int i=0;i<bytesAvailable;i++) {
+
+                            byte b = packetBytes[i];
+                            if(b == '\n')
+                            {
+                                byte[] encodedBytes = new byte[readBufferPosition];
+                                System.arraycopy(readBuffer, 0, encodedBytes, 0,
+                                        encodedBytes.length);
+                                String recvMessage = new String(encodedBytes, "UTF-8");
+
+                                readBufferPosition = 0;
+
+                                Log.d(TAG, "recv message: " + recvMessage);
+                                publishProgress(recvMessage);
+                            }
+                            else
+                            {
+                                readBuffer[readBufferPosition++] = b;
+                            }
+                        }
                     }
                 } catch (IOException e) {
 
