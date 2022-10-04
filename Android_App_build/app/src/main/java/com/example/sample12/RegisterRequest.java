@@ -4,16 +4,17 @@ import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 public class RegisterRequest extends StringRequest {
 
     // 서버 URL 설정 (PHP 레지스터 파일 연동)
-    final static private String URL = "http://ye20327.dothome.co.kr/Register.php";
+    final static private String URL = "http://j4895.dothome.co.kr/Register.php";
     private Map<String, String> map;
 
     public RegisterRequest(String userID, String userPassword, String userName,
-                           int userAge, Response.Listener<String> Listener) {
+                           int userAge, int Phone_number,Response.Listener<String> Listener) {
         super(Method.POST,URL,Listener,null);
 
         map = new HashMap<>();
@@ -21,6 +22,8 @@ public class RegisterRequest extends StringRequest {
         map.put("userPassword",userPassword);
         map.put("userName",userName);
         map.put("userAge",userAge + "");
+        //보호자
+        map.put("Phone_number",Phone_number+"");
 
     }
 
