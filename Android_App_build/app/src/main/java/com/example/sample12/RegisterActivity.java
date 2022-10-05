@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private EditText et_id, et_pass, et_name, et_age;
+    private EditText et_id, et_pass, et_name, et_age, et_num;
     private Button btn_register;
 
 
@@ -37,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
         et_pass = findViewById(R.id.et_pass);
         et_name = findViewById(R.id.et_name);
         et_age = findViewById(R.id.et_age);
+        et_num = findViewById(R.id.et_num);
 
 
         //회원가입 클릭시
@@ -49,6 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String userPass = et_pass.getText().toString();
                 String userName = et_name.getText().toString();
                 int userAge = Integer.parseInt(et_age.getText().toString());
+                int user2num = Integer.parseInt(et_num.getText().toString());
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -71,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 };
                 //서버로 volley를 이용해서 요청
-                RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, responseListener);
+                RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, user2num, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
             }
