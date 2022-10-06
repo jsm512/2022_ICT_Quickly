@@ -11,7 +11,7 @@
   <br>
   
 ## 📡 구성도
-<img src = "https://user-images.githubusercontent.com/93397687/194187467-ccfd3352-daed-404e-96dd-233c23c37b8a.png" align = "center">
+![image](https://user-images.githubusercontent.com/93397687/194212303-5781f2ea-80ee-4273-bdf0-fec37124efba.png)
 
 ### ⚙️ 개발 환경
 * S/W
