@@ -18,7 +18,7 @@
   * `Java 8`
   * `Android SDK`
   * **IDE** : Android Studio
-  * **Database** : Firebase, 
+  * **Database** : Firebase | Dothome
 * H/W
   * `C/C++`
   * **IDE** : Arduino IDE
