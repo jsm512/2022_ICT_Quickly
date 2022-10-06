@@ -14,10 +14,13 @@
 ![image](https://user-images.githubusercontent.com/93397687/194187467-ccfd3352-daed-404e-96dd-233c23c37b8a.png)
 
 ### ⚙️ 개발 환경
-
 * S/W
-- `Java 8`
-
-
+  * `Java 8`
+  * `Android SDK`
+  * **IDE** : Android Studio
+  * **Database** : Firebase
+* H/W
+  * `C/C++`
+  * **IDE** : Arduino IDE
 
 ## 📌 주요 기능
