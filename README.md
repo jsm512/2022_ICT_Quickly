@@ -12,6 +12,7 @@
   
 ## 📡 구성도
 ![image](https://user-images.githubusercontent.com/93397687/194212303-5781f2ea-80ee-4273-bdf0-fec37124efba.png)
+<img src = "https://user-images.githubusercontent.com/93397687/194212303-5781f2ea-80ee-4273-bdf0-fec37124efba.png" align = "center">
 
 ### ⚙️ 개발 환경
 * S/W
