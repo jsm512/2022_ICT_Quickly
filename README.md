@@ -25,7 +25,7 @@
 
 ## 📌 주요 기능(상세 내용 추가 예정)
 * S/W
-  * #### 로그인 
+  * #### 로그인 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Login)" >상세보기 - WIKI 이동</a>
   * #### 회원가입
   * #### 페어링
   * #### 주변 병원 검색
