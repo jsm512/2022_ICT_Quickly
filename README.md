@@ -26,10 +26,10 @@
 ## 📌 주요 기능(상세 내용 추가 예정)
 * S/W
   * #### 로그인 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Login)" >상세보기 - WIKI 이동</a>
-  * #### 회원가입
-  * #### 페어링
-  * #### 주변 병원 검색
-  * #### 응급 호출
+  * #### 회원가입 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Sign-Up)" >상세보기 - WIKI 이동</a>
+  * #### 페어링 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Bluetooth-Pairing)" >상세보기 - WIKI 이동</a>
+  * #### 주변 병원 검색 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Search-hospital)" >상세보기 - WIKI 이동</a>
+  * #### 응급 호출 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Emergency-Call)" >상세보기 - WIKI 이동</a>
 * H/W
-  * #### 진동 센서
-  * #### 자이로 센서
+  * #### 진동 센서 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Login)" >상세보기 - WIKI 이동</a>
+  * #### 자이로 센서 - <a href="https://github.com/hyejeong14/2022_ICT_Quickly/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Login)" >상세보기 - WIKI 이동</a>
