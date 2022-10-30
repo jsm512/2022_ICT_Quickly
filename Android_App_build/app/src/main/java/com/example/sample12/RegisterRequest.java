@@ -14,7 +14,7 @@ public class RegisterRequest extends StringRequest {
     private Map<String, String> map;
 
     public RegisterRequest(String userID, String userPassword, String userName,
-                           int userAge, int Phone_number,Response.Listener<String> Listener) {
+                           int userAge, int user2num, Response.Listener<String> Listener) {
         super(Method.POST,URL,Listener,null);
 
         map = new HashMap<>();
@@ -22,8 +22,7 @@ public class RegisterRequest extends StringRequest {
         map.put("userPassword",userPassword);
         map.put("userName",userName);
         map.put("userAge",userAge + "");
-        //보호자
-        map.put("Phone_number",Phone_number+"");
+        map.put("user2num", user2num + "");
 
     }
 

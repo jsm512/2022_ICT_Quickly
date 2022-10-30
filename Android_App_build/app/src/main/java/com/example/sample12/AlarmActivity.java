@@ -74,8 +74,8 @@ public class AlarmActivity extends AppCompatActivity {
                         return;
                     }
 
-                    SendSMS("01049365174", nowlo + "\n" + "낙상사고 발생");
-
+                    SendSMS("01035232833", nowlo + "\n" + "낙상사고 발생");
+                    SendSMS("01088067574", nowlo + "\n" + "낙상사고 발생");
                     StopTimer();
                     finish();
                 }
