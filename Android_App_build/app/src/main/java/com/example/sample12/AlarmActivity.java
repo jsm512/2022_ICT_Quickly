@@ -84,9 +84,9 @@ public class AlarmActivity extends AppCompatActivity {
                         return;
                     }
 
-                    SendSMS(Phone_number, "[안심이 APP 응급호출 발신]"+userName+"님" +"\n"+ nowlo + "낙상사고 발생");//보호자
+                    SendSMS("01049365174", "[안심이 APP 응급호출 발신]"+"\n"+"probono님" +"\n"+ nowlo + "낙상사고 발생");//보호자
 
-                    SendSMS("01088067574", "[안심이 APP 응급호출 발신]"+"\n"+userName+"님" +"\n"+ nowlo + "낙상사고 발생");//119
+                    SendSMS("01088067574", "[안심이 APP 응급호출 발신]"+"\n"+"probono님" +"\n"+ nowlo + "낙상사고 발생");//119
                     StopTimer();
                     finish();
                 }

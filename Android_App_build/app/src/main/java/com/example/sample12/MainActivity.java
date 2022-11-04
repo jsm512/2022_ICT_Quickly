@@ -29,6 +29,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
@@ -107,6 +108,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 Intent k = new Intent(MainActivity.this, AlarmActivity.class);
+                k.putExtra("userName",userName);
+                k.putExtra("userNum",Phone_number);
 
                 startActivity(k);
 
@@ -159,6 +162,8 @@ public class MainActivity extends AppCompatActivity
                 if (!mBluetoothAdapter.isEnabled()) { // 활성상태 아니라면 이 코드로 활성상태로 변경 가능
                     Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                     startActivityForResult(intent, REQUEST_BLUETOOTH_ENABLE);
+                    intent.putExtra("userName",userName);
+                    intent.putExtra("userNum",Phone_number);
                 }
                 else {
                     Log.d(TAG, "Initialisation successful.");

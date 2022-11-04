@@ -6,9 +6,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
+import com.android.volley.AuthFailureError;
+
+import java.util.Map;
+
 public class AlarmReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+
+
         Intent sIntent = new Intent(context, AlarmService.class);
 
 
@@ -19,5 +25,4 @@ public class AlarmReceiver extends BroadcastReceiver {
             context.startService(sIntent);
         }
     }
-
 }
