@@ -1,6 +1,7 @@
 package com.example.sample12;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -23,9 +24,10 @@ import java.util.TimerTask;
 
 public class AlarmActivity extends AppCompatActivity {
 
-
     private int counter = 10;
     private TextView timer_text;
+    TextView textName;
+    TextView textNum;
     private final Handler handler = new Handler();
 
     private MediaPlayer mediaPlayer;
@@ -49,8 +51,16 @@ public class AlarmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
         timer_text= findViewById(R.id.timer);
+        textName = findViewById(R.id.TextView4);
+        textNum = findViewById(R.id.TextView5);
 
+        Intent intent = getIntent();
 
+        final String Phone_number = intent.getStringExtra("Phone_number");
+        final String userName = intent.getStringExtra("userName");
+
+        textName.setText(userName);
+        textNum.setText(Phone_number);
 
         gps = new GpsTracker(AlarmActivity.this);
 
@@ -74,8 +84,9 @@ public class AlarmActivity extends AppCompatActivity {
                         return;
                     }
 
-                    SendSMS("01049365174", nowlo + "\n" + "낙상사고 발생");
-                    SendSMS("01088067574", nowlo + "\n" + "낙상사고 발생");
+                    SendSMS(Phone_number, "[안심이 APP 응급호출 발신]"+userName+"님" +"\n"+ nowlo + "낙상사고 발생");//보호자
+
+                    SendSMS("01088067574", "[안심이 APP 응급호출 발신]"+"\n"+userName+"님" +"\n"+ nowlo + "낙상사고 발생");//119
                     StopTimer();
                     finish();
                 }

@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity
 
     public String id="";
 
+    public String number ="";
+
     private String nowlocation = "";
 
     public int count = 0;
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity
 
     ImageButton btn_call119,btn_hospital;
     TextView textName;
+    TextView textView3;
 
 
 
@@ -88,13 +91,15 @@ public class MainActivity extends AppCompatActivity
         btn_hospital = (ImageButton) findViewById(R.id.btn_hospital);
 
         textName = findViewById(R.id.textName);
+        textView3 = findViewById(R.id.textView3);
 
         Intent intent = getIntent();
         final String userName = intent.getStringExtra("userName");
-        final String userID = intent.getStringExtra("userID");
+        final String Phone_number = intent.getStringExtra("Phone_number");
         textName.setText(userName);
+        textView3.setText(Phone_number);
         name = userName;
-        id=userID;
+        number = Phone_number; //사용자 번호
 
 
         btn_call119.setOnClickListener(new View.OnClickListener(){
@@ -102,7 +107,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 Intent k = new Intent(MainActivity.this, AlarmActivity.class);
-                k.putExtra("userID",id);
+
                 startActivity(k);
 
                 if(!isPermission){
@@ -117,9 +122,11 @@ public class MainActivity extends AppCompatActivity
                 double longitude = gps2.getLongitude(); //경도
 
                 nowlocation = getCurrentAddress(latitude,longitude);
-                SendSMS("01088067574", userName+"님" +"\n"+ nowlocation + "낙상사고 발생");
-                Toast.makeText(getApplicationContext(),"낙상발생! 119에 신고합니다.",Toast.LENGTH_LONG).show();
-                SendSMS("01049365174", userName+"님" +"\n"+ nowlocation + "낙상사고 발생");
+
+                SendSMS("01088067574", "[안심이 APP 응급호출 발신]"+"\n"+userName+"님" +"\n"+ nowlocation + "낙상사고 발생");//119
+
+                SendSMS(Phone_number, "[안심이 APP 응급호출 발신]"+userName+"님" +"\n"+ nowlocation + "낙상사고 발생"); //보호자
+
                 Toast.makeText(getApplicationContext(),"낙상발생! 119에 신고합니다.",Toast.LENGTH_LONG).show();
 
             }

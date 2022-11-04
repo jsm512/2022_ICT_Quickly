@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String userPass = et_pass.getText().toString();
                 String userName = et_name.getText().toString();
                 int userAge = Integer.parseInt(et_age.getText().toString());
-                int user2num = Integer.parseInt(et_num.getText().toString());
+                String Phone_number = et_num.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -73,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 };
                 //서버로 volley를 이용해서 요청
-                RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, user2num, responseListener);
+                RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, Phone_number, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
             }

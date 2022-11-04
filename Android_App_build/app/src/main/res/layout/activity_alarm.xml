@@ -32,4 +32,21 @@
         android:textSize="30dp"
         android:background="#46FFFF"/>
 
+    <TextView
+        android:id="@+id/TextView4"
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:gravity="center"
+        android:text="9분 58초"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TextView5"
+        android:layout_width="13dp"
+        android:layout_height="7dp"
+        android:gravity="center"
+        android:text="9분 58초"
+        android:textSize="40dp" />
+
+
 </LinearLayout>
