@@ -59,6 +59,7 @@ public class AlarmActivity extends AppCompatActivity {
         final String Phone_number = intent.getStringExtra("Phone_number");
         final String userName = intent.getStringExtra("userName");
 
+
         textName.setText(userName);
         textNum.setText(Phone_number);
 

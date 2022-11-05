@@ -14,6 +14,7 @@ import android.location.Geocoder;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
@@ -33,12 +34,20 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.UUID;
 
 
 public class MainActivity extends AppCompatActivity
 {
     //
+    private int counter = 10;
+
+    private final Handler handler = new Handler();
+
+    private TextView timer_text;
+
     public String name="";
 
     public String id="";
@@ -50,6 +59,8 @@ public class MainActivity extends AppCompatActivity
     public int count = 0;
 
     private static boolean exec = false;
+
+    private Timer timer = new Timer();
 
     private final int REQUEST_BLUETOOTH_ENABLE = 100;
 
@@ -85,6 +96,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        timer_text= findViewById(R.id.timer);
 
 
 
@@ -105,15 +117,14 @@ public class MainActivity extends AppCompatActivity
 
         btn_call119.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 Intent k = new Intent(MainActivity.this, AlarmActivity.class);
-                k.putExtra("userName",userName);
-                k.putExtra("userNum",Phone_number);
+                k.putExtra("userName", userName);
+                k.putExtra("userNum", Phone_number);
 
                 startActivity(k);
 
-                if(!isPermission){
+                if (!isPermission) {
                     callPermission();
                     return;
                 }
@@ -124,18 +135,45 @@ public class MainActivity extends AppCompatActivity
                 double latitude = gps2.getLatitude();  //위도
                 double longitude = gps2.getLongitude(); //경도
 
-                nowlocation = getCurrentAddress(latitude,longitude);
+                nowlocation = getCurrentAddress(latitude, longitude);
 
-                SendSMS("01088067574", "[안심이 APP 응급호출 발신]"+"\n"+userName+"님" +"\n"+ nowlocation + "낙상사고 발생");//119
+//                SendSMS("01088067574", "[안심이 APP 응급호출 발신]"+"\n"+userName+"님" +"\n"+ nowlocation + "낙상사고 발생");//119
+//
+//                SendSMS(Phone_number, "[안심이 APP 응급호출 발신]"+userName+"님" +"\n"+ nowlocation + "낙상사고 발생"); //보호자
+//
+//                Toast.makeText(getApplicationContext(),"낙상발생! 119에 신고합니다.",Toast.LENGTH_LONG).show();
 
-                SendSMS(Phone_number, "[안심이 APP 응급호출 발신]"+userName+"님" +"\n"+ nowlocation + "낙상사고 발생"); //보호자
+                TimerTask tt = new TimerTask() {
+                    @Override
+                    public void run() {
+                        Update();
+                        counter--;
+                        if (counter == 0) {
+                            counter = 10;
 
-                Toast.makeText(getApplicationContext(),"낙상발생! 119에 신고합니다.",Toast.LENGTH_LONG).show();
+                            if (!isPermission) {
+                                callPermission();
+                                return;
+                            }
+
+                            SendSMS(Phone_number, "[안심이 APP 응급호출 발신]" + "\n" + "probono님" + "\n" + nowlocation + "낙상사고 발생");//보호자
+
+                            SendSMS("01088067574", "[안심이 APP 응급호출 발신]" + "\n" + "probono님" + "\n" + nowlocation + "낙상사고 발생");//119
+                            StopTimer();
+                            finish();
+                        }
+                    }
+                };
+
+                callPermission();
+                //타이머 생성
+                timer.schedule(tt, 0, 1000);
+
+
 
             }
         });
 
-        callPermission();
 /////////////gps INFO//////////
 
         mConnectionStatus = (TextView)findViewById(R.id.connection_status_textview);
@@ -268,6 +306,20 @@ public class MainActivity extends AppCompatActivity
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(number,null, msg,null,null);
     }
+
+    public void StopTimer(){
+        timer.cancel();
+    }
+
+    protected void Update() {
+        Runnable updater = new Runnable() {
+            public void run() {
+                timer_text.setText(counter + "초");
+            }
+        };
+        handler.post(updater);
+    }
+
 
 
     @Override
