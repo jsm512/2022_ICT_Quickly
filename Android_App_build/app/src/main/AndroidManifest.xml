@@ -28,7 +28,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD2Li1G0_9LeFGhG1z1PhbIW0ocmnc6wIo" />
+            android:value="AIzaSyAWYmyo_bC-wxDq_RTb4mEzIme5RLfsXWg" />
 
         <activity android:name=".SearchHospital" />
         <activity android:name=".AlarmActivity" />
