@@ -599,7 +599,7 @@ public class SearchHospital extends AppCompatActivity
 
         new NRPlaces.Builder()
                 .listener(SearchHospital.this)
-                .key("AIzaSyAsuh1PNVcvkBqkzkitVltCEFYGj0CZR3o")
+                .key("AIzaSyBkzRfkJPXDOMA1HYYct5-FIJXNCxFVdeA")
                 .latlng(location.latitude, location.longitude)//현재위치
                 .radius(1000) // 1000미터 내에서 검색
                 .type(PlaceType.HOSPITAL) // 병원
