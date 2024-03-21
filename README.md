@@ -1,4 +1,4 @@
-# 2022_프로보노 공모전 ![image](https://github.com/jsm512/2022_ICT_Quickly/assets/93397687/aad689f8-24d9-47d1-90a7-1523f6dea4e4) 수상
+# 2022_프로보노 공모전 <img src = "https://cdn-icons-png.flaticon.com/512/7645/7645706.png" width = "70" height = "70">수상
 
 ## Emergency Detection and Response System for the Elderly and the Disabled
  노약자의 전동보장구 응급상황 탐지 및 대응 시스템
